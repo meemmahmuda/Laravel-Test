@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController; 
 
 Route::get('/', function () {
-    return view('welcom');
+    return view('welcome');
 });
 
 Route::get('/customer', [CustomerController::class, 'index'])->name('customer'); 
