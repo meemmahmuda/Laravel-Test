@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/customer', [CustomerController::class, 'index'])->name('customer'); 
+Route::get('/', [CustomerController::class, 'index'])->name('customer'); 
 
 Route::get('createcustomer', [CustomerController::class, 'create'])->name('customercreate');
 
